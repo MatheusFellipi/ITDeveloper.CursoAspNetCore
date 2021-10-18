@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{B202F714-BCF1-4D72-9991-5BFE4358D6D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Aplication", "2.Aplication", "{B4E9B9FD-9FDB-4549-ADEE-7CB6A1A2FE4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{FD9B0D45-BFBE-4246-B553-9569D7D1C3DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infra", "4.Infra", "{7E1C58F7-6488-4BDA-8378-46A665C60CAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITDeveloper.CursoAspNet.MVC", "ITDeveloper.CursoAspNet.MVC\ITDeveloper.CursoAspNet.MVC.csproj", "{4F311253-809B-46ED-8CF8-919C0C5F1B1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F311253-809B-46ED-8CF8-919C0C5F1B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F311253-809B-46ED-8CF8-919C0C5F1B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F311253-809B-46ED-8CF8-919C0C5F1B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F311253-809B-46ED-8CF8-919C0C5F1B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F311253-809B-46ED-8CF8-919C0C5F1B1A} = {B202F714-BCF1-4D72-9991-5BFE4358D6D5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71646F44-66EA-4E5E-B615-7C2578AA5BF0}
+	EndGlobalSection
+EndGlobal

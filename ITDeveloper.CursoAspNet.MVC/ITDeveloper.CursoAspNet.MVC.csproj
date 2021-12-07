@@ -15,4 +15,8 @@
     <ProjectReference Include="..\ITDeveloper.CursoAspNetCore.Infra.Data\ITDeveloper.CursoAspNetCore.Infra.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
 </Project>

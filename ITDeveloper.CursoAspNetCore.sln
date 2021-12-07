@@ -13,13 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infra", "4.Infra", "{7E1C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITDeveloper.CursoAspNet.MVC", "ITDeveloper.CursoAspNet.MVC\ITDeveloper.CursoAspNet.MVC.csproj", "{4F311253-809B-46ED-8CF8-919C0C5F1B1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITDeveloper.CursoAspNetCore.Domain", "src\ITDeveloper.CursoAspNetCore.Domain\ITDeveloper.CursoAspNetCore.Domain.csproj", "{B167975B-7EAC-49B6-BC9E-226C60D09DB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITDeveloper.CursoAspNetCore.Domain", "src\ITDeveloper.CursoAspNetCore.Domain\ITDeveloper.CursoAspNetCore.Domain.csproj", "{B167975B-7EAC-49B6-BC9E-226C60D09DB5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2.MapEntities", "4.2.MapEntities", "{10D02152-6E65-4D36-B550-A4F0EA9FC570}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1.Data", "4.1.Data", "{A552DFC6-591F-48A6-BCB3-DE045071C9DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITDeveloper.CursoAspNetCore.Infra.Data", "ITDeveloper.CursoAspNetCore.Infra.Data\ITDeveloper.CursoAspNetCore.Infra.Data.csproj", "{7DBBF5E8-9A0E-489C-806A-D6FE120B2E80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITDeveloper.CursoAspNetCore.Infra.Data", "ITDeveloper.CursoAspNetCore.Infra.Data\ITDeveloper.CursoAspNetCore.Infra.Data.csproj", "{7DBBF5E8-9A0E-489C-806A-D6FE120B2E80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

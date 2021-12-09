@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ITDeveloper.CursoAspNetCore.Domain.Models;
+using ITDeveloper.CursoAspNetCore.Domain.Enums;
 using ITDeveloper.CursoAspNetCore.Infra.Data.ORM;
 
 namespace ITDeveloper.CursoAspNet.MVC.Controllers
@@ -19,11 +18,13 @@ namespace ITDeveloper.CursoAspNet.MVC.Controllers
             _context = context;
         }
 
+        // GET: Paciente
         public async Task<IActionResult> Index()
         {
             return View(await _context.Pacientes.ToListAsync());
         }
 
+        // GET: Paciente/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
@@ -41,26 +42,29 @@ namespace ITDeveloper.CursoAspNet.MVC.Controllers
             return View(paciente);
         }
 
+        // GET: Paciente/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        // POST: Paciente/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Paciente paciente)
         {
             if (ModelState.IsValid)
             {
-                //paciente.Id = Guid.NewGuid();
                 _context.Add(paciente);
                 await _context.SaveChangesAsync();
-               // return RedirectToAction(nameof(Index));
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
             return View(paciente);
         }
 
+        // GET: Paciente/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
@@ -76,6 +80,9 @@ namespace ITDeveloper.CursoAspNet.MVC.Controllers
             return View(paciente);
         }
 
+        // POST: Paciente/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, Paciente paciente)
@@ -108,6 +115,7 @@ namespace ITDeveloper.CursoAspNet.MVC.Controllers
             return View(paciente);
         }
 
+        // GET: Paciente/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)

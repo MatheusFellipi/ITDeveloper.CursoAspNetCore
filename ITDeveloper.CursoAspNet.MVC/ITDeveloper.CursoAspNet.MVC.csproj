@@ -18,11 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ITDeveloper.CursoAspNetCore.Infra.Data\ITDeveloper.CursoAspNetCore.Infra.Data.csproj" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <ProjectReference Include="..\ITDeveloper.CursoAspNetCore.Infra.Data\ITDeveloper.CursoAspNetCore.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

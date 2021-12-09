@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ITDeveloper.CursoAspNetCore.Infra.Data.Migrations
 {
     [DbContext(typeof(ITDeveloperDBContext))]
-    [Migration("20211130190541_Initial-Migration")]
-    partial class InitialMigration
+    [Migration("20211209184537_AddPaciente")]
+    partial class AddPaciente
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -46,6 +46,53 @@ namespace ITDeveloper.CursoAspNetCore.Infra.Data.Migrations
                     b.HasKey("MuralId");
 
                     b.ToTable("Mural");
+                });
+
+            modelBuilder.Entity("ITDeveloper.CursoAspNetCore.Domain.Models.Paciente", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Cpf")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DataCreated_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataInternacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataNascimento")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Rg")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RgDataEmisao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RgOrgao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Sexo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoPaciente")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Pacientes");
                 });
 #pragma warning restore 612, 618
         }

@@ -2,7 +2,6 @@
 
 @{
     ViewData["Title"] = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Details</h2>
@@ -16,18 +15,6 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DataInternacao)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DataInternacao)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DataNascimento)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DataNascimento)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Email)
@@ -48,16 +35,16 @@
             @Html.DisplayFor(model => model.Cpf)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.TipoPaciente)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.TipoPaciente)
-        </dd>
-        <dt>
             @Html.DisplayNameFor(model => model.Sexo)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Sexo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPaciente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoPaciente)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Rg)
@@ -76,6 +63,24 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.RgDataEmisao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataInternacao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataInternacao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataNascimento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCreated_at)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataCreated_at)
         </dd>
     </dl>
 </div>

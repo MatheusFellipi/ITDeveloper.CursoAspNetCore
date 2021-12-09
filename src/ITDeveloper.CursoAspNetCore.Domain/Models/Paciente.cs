@@ -9,14 +9,10 @@ namespace ITDeveloper.CursoAspNetCore.Domain.Models
 	{
 		public Paciente()
 		{
-			this.DataInternacao = DateTime.Now;
+			this.DataCreated_at = DateTime.Now;
 			this.Ativo = true;
 		}
 		public string Nome { get; set; }
-
-		public DateTime DataInternacao { get; set; }
-
-		public DateTime DataNascimento { get; set; }
 
 		public string Email { get; set; }
 
@@ -24,13 +20,18 @@ namespace ITDeveloper.CursoAspNetCore.Domain.Models
 
 		public string Cpf { get; set; }
 
-		public TipoPaciente TipoPaciente { get; set; }
 		public Sexo Sexo { get; set; }
+
+		public TipoPaciente TipoPaciente { get; set; }
 
 		public string Rg { get; set; }
 
 		public string RgOrgao { get; set; } 
 
 		public DateTime RgDataEmisao { get; set; }
+		public DateTime DataInternacao { get; set; }
+		public DateTime DataNascimento { get; set; }
+
+		public DateTime DataCreated_at { get; set; }
 	}
 }

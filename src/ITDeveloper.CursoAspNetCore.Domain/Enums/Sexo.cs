@@ -1,9 +1,10 @@
-﻿namespace ITDeveloper.CursoAspNetCore.Domain.Enums
+﻿
+namespace ITDeveloper.CursoAspNetCore.Domain.Enums
 {
 	public enum Sexo
 	{
-		Feminino =  1,
+		Feminilo=1,
+		Masculino = 2,
 
-		masculino = 2
 	}
 }

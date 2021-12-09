@@ -58,6 +58,9 @@ namespace ITDeveloper.CursoAspNetCore.Infra.Data.Migrations
                     b.Property<string>("Cpf")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("DataCreated_at")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("DataInternacao")
                         .HasColumnType("datetime2");
 

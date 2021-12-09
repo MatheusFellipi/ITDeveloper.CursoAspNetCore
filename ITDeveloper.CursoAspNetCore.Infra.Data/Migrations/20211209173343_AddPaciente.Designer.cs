@@ -4,14 +4,16 @@ using ITDeveloper.CursoAspNetCore.Infra.Data.ORM;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ITDeveloper.CursoAspNetCore.Infra.Data.Migrations
 {
     [DbContext(typeof(ITDeveloperDBContext))]
-    partial class ITDeveloperDBContextModelSnapshot : ModelSnapshot
+    [Migration("20211209173343_AddPaciente")]
+    partial class AddPaciente
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
